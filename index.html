@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
     <link
@@ -43,8 +43,16 @@
       </nav>
       <div class="wrapper headerContainer">
         <div class="textContainer">
-          <h1 data-aos="fade-left" data-aos-duration="4000"><span>Paige</span> Freeman-Cyopeck</h1>
-          <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Front end web developer</h2>
+          <h1 data-aos="fade-left" data-aos-duration="4000">
+            <span>Paige</span> Freeman-Cyopeck
+          </h1>
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+          >
+            Front end web developer
+          </h2>
         </div>
         <i class="fas fa-chevron-down bounce" id="arrowDown"></i>
       </div>
@@ -53,20 +61,16 @@
     <main>
       <section class="sectionIntro" id="sectionIntro">
         <div class="gridWrapper gridContainer" data-aos="fade-in">
-          <h2>Hey!!</h2>
+          <h2>About Me</h2>
           <div class="imageContainer">
             <img src="http://placecorgi.com/400/400" alt="" />
           </div>
           <div class="textContainer">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Veritatis doloremque nihil sapiente necessitatibus molestiae,
-              ratione hic voluptate quo eaque debitis!
+              My name is Paige, and I'm a front end web developer based out of Toronto!
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
-              placeat distinctio facere, laudantium rerum odit ex impedit
-              suscipit repudiandae.
+              With previous Object Oriented Programming experience, diving into front-end development has been such an exciting journey for me. I'm passionate about writing clean and conscise code, as well as making user friendly and accesible applications. If you can't find me at my desk, I'm usually playing some video games, working on music passion projects, or spending time with my dog! I'm excited to see what the future brings and to keep improving my knowledge. 
             </p>
           </div>
         </div>
@@ -180,21 +184,70 @@
       </section>
 
       <section class="sectionContact">
-        <div class="wrapper">
+        <div class="wrapper gridContainer">
           <h2>Get In Touch!</h2>
-          <a href="mailto:pfreemanc@gmail.com">Send me an email!</a>
-          <button class="btnCopyEmail" data-clipboard-text="pfreemanc@gmail.com" data-clipboard-action="copy"><i class="fas fa-copy"></i></button>
-          <a href="https://github.com/pfreemanc/"
-            ><i class="fab fa-github-square"></i
-          ></a>
-          <a href="https://twitter.com/littledogfriend"
-            ><i class="fab fa-twitter-square"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
+          <form
+            action="https://formspree.io/f/xpzopkqa"
+            method="post"
+            class="formContact"
+          >
+            <label for="name" class="sr-only">Your Name</label>
+            <input type="text" placeholder="Your Name" name="name" id="name" required="true"/>
+
+            <label for="email" class="sr-only">Your Email</label>
+            <input
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              id="email"
+            />
+
+            <textarea
+              name="userMessage"
+              id="userMessage"
+              cols="40"
+              rows="5"
+              placeholder="What do you want to talk about?"
+            ></textarea>
+            <button type="submit">Send me a message!</button>
+          </form>
+
+          <div class="textContainer">
+            <h3>OR</h3>
+            <ul>
+              <li>
+                <a href="mailto:pfreemanc@gmail.com">Send me an email!</a>
+              </li>
+              <li class="icon">
+                <a href="https://github.com/pfreemanc/"
+                  ><i class="fab fa-github-square"></i
+                ></a>
+              </li>
+              <li class="icon">
+                <a href="https://twitter.com/littledogfriend"
+                  ><i class="fab fa-twitter-square"></i
+                ></a>
+              </li>
+              <li class="icon">
+                <a
+                  href="https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/"
+                  ><i class="fab fa-linkedin"></i
+                ></a> 
+              </li>
+            </ul>
+            <!-- <button
+              class="btnCopyEmail"
+              id="btnCopyEmail"
+              title="Copy to clipboard"
+              data-clipboard-text="pfreemanc@gmail.com"
+              data-clipboard-action="copy"
+            >
+              <i class="fas fa-copy"></i>
+            </button> -->
+          </div>
         </div>
       </section>
+
       <footer></footer>
     </main>
 

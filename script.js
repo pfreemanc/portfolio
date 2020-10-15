@@ -32,9 +32,5 @@ $(function () {
     else {
       $('#arrowDown').fadeIn();
     }
-  })
-
-  $('.btnCopyEmail').tooltip({
-    content: 'hey'
-  })
+  });
 });
