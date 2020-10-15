@@ -5,128 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!!!!</title>
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
-
       <!-- TODO Hamburger menu with js or something :eyes: -->
+      <nav class="navBar">
+        <button class="hamburger" id="btnHamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navLinks closed">
+          <li class="navLink">
+            <a href="#sectionIntro">About Me</a>
+          </li>
+          <li class="navLink">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="navLink">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="navLink">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
       <div class="wrapper headerContainer">
-        <div class="navBar"></div>
         <div class="textContainer">
-          <h1><span>Paige</span> Freeman-Cyopeck</h1>
-          <h2>Front end web developer</h2>
+          <h1 data-aos="fade-left" data-aos-duration="4000"><span>Paige</span> Freeman-Cyopeck</h1>
+          <h2 data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Front end web developer</h2>
         </div>
+        <i class="fas fa-chevron-down bounce" id="arrowDown"></i>
       </div>
     </header>
 
     <main>
-      <section class="sectionIntro ">
-        <div class="gridWrapper gridContainer">
-        <h2>Hey!!</h2>
+      <section class="sectionIntro" id="sectionIntro">
+        <div class="gridWrapper gridContainer" data-aos="fade-in">
+          <h2>Hey!!</h2>
           <div class="imageContainer">
             <img src="http://placecorgi.com/400/400" alt="" />
           </div>
           <div class="textContainer">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
-            doloremque nihil sapiente necessitatibus molestiae, ratione hic
-            voluptate quo eaque debitis!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
-            placeat distinctio facere, laudantium rerum odit ex impedit suscipit
-            repudiandae.
-          </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Veritatis doloremque nihil sapiente necessitatibus molestiae,
+              ratione hic voluptate quo eaque debitis!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ut
+              placeat distinctio facere, laudantium rerum odit ex impedit
+              suscipit repudiandae.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="sectionProjects">
-
+      <section class="sectionProjects" id="projects">
         <div class="wrapper flexContainer">
           <h2>My Work!</h2>
           <div class="projectContainer">
-            <div class="textContainer">
+            <div class="textContainer" data-aos="fade-right">
               <h3>Working Title</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-                voluptas nobis provident labore soluta impedit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nostrum voluptas nobis provident labore soluta impedit?
               </p>
               <!-- TODO fix link -->
               <a href="https://pfreemanc.github.io/">Link!!!</a>
             </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/400/400" alt="">
+            <div class="imageContainer" data-aos="fade-left">
+              <img src="./styles/assets/movieMockup.png" alt="" />
             </div>
           </div>
 
           <div class="projectContainer">
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/400/400" alt="">
+            <div class="imageContainer" data-aos="fade-right">
+              <img src="./styles/assets/podcastMockup.png" alt="" />
             </div>
-            <div class="textContainer">
+            <div class="textContainer" data-aos="fade-left">
               <h3>Working Title</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-                voluptas nobis provident labore soluta impedit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nostrum voluptas nobis provident labore soluta impedit?
               </p>
               <!-- TODO fix link -->
               <a href="https://pfreemanc.github.io/">Link!!!</a>
             </div>
           </div>
-          <button><a href="https://github.com/pfreemanc/">GitHub</a></button>
-        </div>
 
+          <div class="projectContainer">
+            <div class="textContainer" data-aos="fade-right">
+              <h3>Working Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nostrum voluptas nobis provident labore soluta impedit?
+              </p>
+              <!-- TODO fix link -->
+              <a href="https://pfreemanc.github.io/">Link!!!</a>
+            </div>
+            <div class="imageContainer" data-aos="fade-left">
+              <img src="./styles/assets/pokemonMockup.png" alt="" />
+            </div>
+          </div>
+          <button>Github</button>
+        </div>
       </section>
 
-      <section class="sectionSkills">
+      <section class="sectionSkills" id="skills">
         <div class="wrapper">
-
-          <div class="gridContainer">
-            <h2>Skills</h2>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            <div class="imageContainer">
-              <img src="http://placecorgi.com/200/200" alt="">
-            </div>
-            
-
+          <h2>Skills</h2>
+          <ul class="gridContainer" data-aos="fade-in">
+            <li>
+              <i class="devicon-html5-plain"></i>
+              <p>HTML5</p>
+            </li>
+            <li>
+              <i class="devicon-css3-plain"></i>
+              <p>CSS3</p>
+            </li>
+            <li>
+              <i class="devicon-javascript-plain"></i>
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <i class="devicon-react-original"></i>
+              <p>React</p>
+            </li>
+            <li>
+              <i class="devicon-sass-original"></i>
+              <p>Sass</p>
+            </li>
+            <li>
+              <i class="devicon-jquery-plain"></i>
+              <p>jQuery</p>
+            </li>
+            <li>
+              <i class="devicon-github-plain"></i>
+              <p>GitHub</p>
+            </li>
+            <li>
+              <i class="devicon-slack-plain"></i>
+              <p>Slack</p>
+            </li>
+            <li>
+              <i class="devicon-trello-plain"></i>
+              <p>Trello</p>
+            </li>
+            <li>
+              <i class="devicon-git-plain"></i>
+              <p>Git</p>
+            </li>
+            <li>
+              <span class="material-icons"> devices </span>
+              <p>Responsive Design</p>
+            </li>
+            <li>
+              <i class="devicon-java-plain"></i>
+              <p>Java</p>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="sectionForm">
-        <form action=""></form>
+      <section class="sectionContact">
+        <div class="wrapper">
+          <h2>Get In Touch!</h2>
+          <a href="mailto:pfreemanc@gmail.com">Send me an email!</a>
+          <button class="btnCopyEmail" data-clipboard-text="pfreemanc@gmail.com" data-clipboard-action="copy"><i class="fas fa-copy"></i></button>
+          <a href="https://github.com/pfreemanc/"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a href="https://twitter.com/littledogfriend"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
       </section>
       <footer></footer>
     </main>
 
+    <script
+      src="https://kit.fontawesome.com/9a98468feb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 
-    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
