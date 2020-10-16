@@ -8,8 +8,9 @@ $baseFont: "Montserrat", sans-serif;
 $secondaryFont: "Playfair Display", serif;
 
 // colours
-$headingColor: #4fd5ed;
+$headingColor: #21CAE8;
 $mainColor: #6f43d6;
+$darkColor: #14213d;
 
 html {
   font-size: 62.5%;
@@ -18,9 +19,16 @@ html {
 
 h1,
 h2,
+h3, 
+h4,
 p {
   margin: 0;
 }
+
+h2 {
+  letter-spacing: 5px;
+}
+
 body {
   font-family: $baseFont;
   font-weight: 400;
@@ -29,6 +37,9 @@ body {
 }
 button {
   cursor: pointer;
+}
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -46,11 +57,12 @@ img {
 .navBar {
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 10%; 
   position: fixed;
   right: 0;
   text-align: center;
   height: 100%;
+  z-index: 100;
   button {
     border: none;
     background: none;
@@ -61,18 +73,17 @@ img {
     display: none;
     li {
       padding: 10px 0;
+      a {
+        color: #14213d;
+      }
     }
   }
 }
 
 header {
   min-height: 100vh;
-  background: rgb(79, 213, 237);
-  background: linear-gradient(
-    180deg,
-    rgba(79, 213, 237, 1) 43%,
-    rgba(111, 67, 214, 1) 100%
-  );
+  background: rgb(33,202,232);
+background: linear-gradient(180deg, rgba(33,202,232,1) 0%, rgba(111,67,214,1) 100%);
 
   .headerContainer {
     position: relative;
@@ -140,7 +151,7 @@ header {
   color: #fff;
 
   font-size: 2rem;
-  min-height: 80vh;
+  min-height: 90vh;
   padding-top: 150px;
 
   display: flex;
@@ -161,11 +172,9 @@ header {
     }
   }
   .imageContainer {
-    margin-left: auto;
+    margin-left: 50px;
     grid-row: 2;
     grid-column: 1 / span 2;
-    width: 30vw;
-    height: 30vw;
     img {
       margin-top: 25px;
     }
@@ -199,8 +208,9 @@ header {
   padding: 100px 0;
   h2 {
     text-align: center;
-    font-size: 5rem;
     text-transform: uppercase;
+    font-size: 5rem;
+    color: $darkColor;
   }
   .flexContainer {
     display: flex;
@@ -209,34 +219,54 @@ header {
     align-items: center;
   }
   .projectContainer {
+    overflow: hidden;
     padding: 20px 0;
-    display: flex;
-    justify-content: center;
     font-size: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     .textContainer {
-      width: 40%;
+      color: #1c2f58;
+      grid-column: 1 / span 2;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     .imageContainer {
-      width: 60%;
+      width: 100%;
+      grid-column: 3 / span 2;
     }
     h3 {
       font-size: 3.6rem;
+      color: $darkColor;
     }
-    &:first-of-type .textContainer {
+    h4 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+    &:first-of-type .textContainer,
+    &:last-of-type .textContainer {
       z-index: 100;
       text-align: right;
     }
-    &:last-of-type .textContainer {
-      z-index: 100;
-      text-align: left;
+    &:nth-of-type(2) .imageContainer {
+      grid-column: 1 / span 2;
+      grid-row: 1;
     }
+    &:nth-of-type(2) .textContainer {
+      grid-column: 3 / span 2;
+    }
+  }
+  .linkContainer {
+    padding: 40px 0;
     a {
+      color: white;
+      padding: 10px;
       text-align: center;
-      display: inline-block;
-      width: 100%;
+      border: 1px solid black;
+      background: #14213d;
+      border-radius: 20px;
     }
   }
 }
@@ -321,6 +351,135 @@ header {
         padding: 10px;
         font-size: 4rem;
       }
+    }
+  }
+}
+
+// 
+@media (max-width: 865px) {
+  .sectionProjects .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+    .imageContainer {
+      grid-row: 1;
+      grid-column: 1 / span 2;
+    }
+    .textContainer{
+      grid-row: 2;
+      grid-column: 1 / span 2;
+    }
+    &:nth-of-type(2) .imageContainer {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+    &:nth-of-type(2) .textContainer {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+    }
+    .linkContainer {
+      display: flex;
+      justify-content: center;
+      a {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+
+  .navBar {
+    button {
+      padding: 10px;
+    }
+    width: 20%;
+  }
+  header .headerContainer .textContainer h1{
+    font-size: 6rem;
+    span {
+      font-size: 4rem;
+    }
+  }
+  .sectionIntro .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    h2 {
+      grid-column: 1 / span 3;
+    }
+    .textContainer {  
+      padding-bottom: 50px;
+      margin: 0;
+      grid-row: 3;
+      grid-column: 1 / span 3;
+      text-align: center;
+    }
+    .imageContainer {
+      grid-column: 1 / span 3;
+      width: 75%;
+      margin: 0 auto;
+      img {
+        margin: 0;
+      }
+    }
+  }
+
+  .sectionContact .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    h2 {
+      grid-column: 1 / span 3;
+    }
+    .textContainer {
+      grid-column: 3 / span 1;
+    }
+  }
+}
+
+@media (max-width: 605px) {
+  .sectionSkills .gridContainer {
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 25px;
+    li,
+    .material-icons {
+      font-size: 4rem;
+    }
+  }
+
+  .sectionContact .gridContainer {
+    .textContainer,
+    form {
+      grid-column: 1 / span 3;
+      width: 100%;
+    }
+  }
+
+}
+
+@media (max-width: 425px) {
+
+  .sectionIntro {
+    .gridWrapper {
+      width: 95%;
+    }
+    .gridContainer h2 {
+      font-size: 5rem;
+    }
+
+  }
+
+  .sectionProjects .projectContainer .linkContainer {
+    flex-direction: column;
+    a{
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  .sectionSkills .gridContainer {
+    gap: 20px;
+    .material-icons,
+    li {
+      font-size: 6rem;
+    }
+    li p {
+      font-size: 1.8rem;
     }
   }
 }

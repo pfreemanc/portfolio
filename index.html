@@ -22,11 +22,11 @@
   <body>
     <header>
       <!-- TODO Hamburger menu with js or something :eyes: -->
-      <nav class="navBar">
+      <nav class="navBar closed">
         <button class="hamburger" id="btnHamburger">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="navLinks closed">
+        <ul class="navLinks">
           <li class="navLink">
             <a href="#sectionIntro">About Me</a>
           </li>
@@ -67,10 +67,17 @@
           </div>
           <div class="textContainer">
             <p>
-              My name is Paige, and I'm a front end web developer based out of Toronto!
+              My name is Paige, and I'm a front end web developer based out of
+              Toronto!
             </p>
             <p>
-              With previous Object Oriented Programming experience, diving into front-end development has been such an exciting journey for me. I'm passionate about writing clean and conscise code, as well as making user friendly and accesible applications. If you can't find me at my desk, I'm usually playing some video games, working on music passion projects, or spending time with my dog! I'm excited to see what the future brings and to keep improving my knowledge. 
+              With previous Object Oriented Programming experience, diving into
+              front-end development has been such an exciting journey for me.
+              I'm passionate about writing clean and conscise code, as well as
+              making user friendly and accesible applications. If you can't find
+              me at my desk, I'm usually playing some video games, working on
+              music passion projects, or spending time with my dog! I'm excited
+              to see what the future brings and to keep improving my knowledge.
             </p>
           </div>
         </div>
@@ -78,16 +85,19 @@
 
       <section class="sectionProjects" id="projects">
         <div class="wrapper flexContainer">
-          <h2>My Work!</h2>
+          <h2>Projects</h2>
           <div class="projectContainer">
             <div class="textContainer" data-aos="fade-right">
-              <h3>Working Title</h3>
+              <h3>Theater Experience</h3>
+              <h4>React | RESTful API | CSS3</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nostrum voluptas nobis provident labore soluta impedit?
+                Built during COVID times in an attempts to recreate the experience of walking down a movie hallway, but this time with a little more information. Take a nostalgic trip and find your next movie to watch.
               </p>
               <!-- TODO fix link -->
-              <a href="https://pfreemanc.github.io/">Link!!!</a>
+              <div class="linkContainer">
+                <a href="https://pfreemanc.github.io/">View Live</a>
+                <a href="">View on GitHub</a>
+              </div>
             </div>
             <div class="imageContainer" data-aos="fade-left">
               <img src="./styles/assets/movieMockup.png" alt="" />
@@ -95,35 +105,40 @@
           </div>
 
           <div class="projectContainer">
-            <div class="imageContainer" data-aos="fade-right">
-              <img src="./styles/assets/podcastMockup.png" alt="" />
-            </div>
             <div class="textContainer" data-aos="fade-left">
-              <h3>Working Title</h3>
+              <h3>Podcast Planner</h3>
+              <h4>React | Firebase | CSS3 | RESTful API</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nostrum voluptas nobis provident labore soluta impedit?
+                Created in an agency style project, worked with a group on creating this application. Set your length of time and build your own podcast playlists with podcasts retrieved from your own selections! 
               </p>
               <!-- TODO fix link -->
-              <a href="https://pfreemanc.github.io/">Link!!!</a>
+              <div class="linkContainer">
+                <a href="https://pfreemanc.github.io/">View Live</a>
+                <a href="">View on GitHub</a>
+              </div>
+            </div>
+            <div class="imageContainer" data-aos="fade-right">
+              <img src="./styles/assets/podcastMockup.png" alt="" />
             </div>
           </div>
 
           <div class="projectContainer">
             <div class="textContainer" data-aos="fade-right">
-              <h3>Working Title</h3>
+              <h3>Pokémon Generator</h3>
+              <h4>jQuery | JavaScript | RESTful API | SASS | HTML5</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nostrum voluptas nobis provident labore soluta impedit?
+                Created in a paired programming style project with Sarah Duong. Uses the Pokémon API to retrieve information based on the user input, and displays the information on a Pokédex page!
               </p>
               <!-- TODO fix link -->
-              <a href="https://pfreemanc.github.io/">Link!!!</a>
+              <div class="linkContainer">
+                <a href="https://pfreemanc.github.io/">View Live</a>
+                <a href="">View GitHub</a>
+              </div>
             </div>
             <div class="imageContainer" data-aos="fade-left">
               <img src="./styles/assets/pokemonMockup.png" alt="" />
             </div>
           </div>
-          <button>Github</button>
         </div>
       </section>
 
@@ -192,7 +207,13 @@
             class="formContact"
           >
             <label for="name" class="sr-only">Your Name</label>
-            <input type="text" placeholder="Your Name" name="name" id="name" required="true"/>
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              id="name"
+              required="true"
+            />
 
             <label for="email" class="sr-only">Your Email</label>
             <input
@@ -232,7 +253,7 @@
                 <a
                   href="https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/"
                   ><i class="fab fa-linkedin"></i
-                ></a> 
+                ></a>
               </li>
             </ul>
             <!-- <button

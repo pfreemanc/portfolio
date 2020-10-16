@@ -4,14 +4,12 @@ function displayNav() {
     direction: "right",
     duration: 500,
   });
-  if(!$('.navLinks').hasClass('open')) {
-    console.log('open');
-    $('.navLinks').addClass('open');
+  if(!$('.navBar').hasClass('open')) {
+    $('.navBar').removeClass('closed').addClass('open');
     $("#btnHamburger").html('<i class="fas fa-times"></i>');
   } else {
-    $('.navLinks').removeClass('open');
+    $('.navBar').removeClass('open').addClass('closed')
     $("#btnHamburger").html('<i class="fas fa-bars"></i>');
-    console.log('closed');
   }
 }
 
@@ -25,6 +23,7 @@ $(function () {
   $('#btnHamburger').on('click', event => {
     displayNav();
   })
+
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
       $('#arrowDown').fadeOut();
