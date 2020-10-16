@@ -491,6 +491,8 @@ header .headerContainer .textContainer span {
   margin-bottom: -25px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 20px 20px 0px 0px rgba(20, 33, 61, 0.808);
+          box-shadow: 20px 20px 0px 0px rgba(20, 33, 61, 0.808);
 }
 
 .sectionIntro .textContainer {
@@ -528,6 +530,7 @@ header .headerContainer .textContainer span {
 }
 
 .sectionIntro .textContainer a {
+  font-weight: 500;
   background: #14213d;
   border-radius: 10px;
   color: white;
@@ -576,7 +579,7 @@ header .headerContainer .textContainer span {
 .sectionProjects .projectContainer {
   overflow: hidden;
   padding: 20px 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -638,14 +641,11 @@ header .headerContainer .textContainer span {
   grid-column: 3 / span 2;
 }
 
-.sectionProjects .linkContainer {
-  padding: 40px 0;
-}
-
 .sectionProjects .linkContainer a {
   display: inline-block;
   color: white;
   padding: 10px 15px;
+  margin: 10px;
   text-align: center;
   background: #14213d;
   border-radius: 20px;
@@ -808,6 +808,10 @@ header .headerContainer .textContainer span {
 
 .sectionContact .gridContainer .textContainer ul {
   padding: 20px 0;
+}
+
+footer {
+  text-align: center;
 }
 
 @media (max-width: 875px) {
