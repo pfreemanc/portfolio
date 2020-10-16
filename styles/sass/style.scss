@@ -196,6 +196,7 @@ header {
     grid-column: 1 / span 2;
     img {
       margin-top: 25px;
+      margin-bottom: -25px;
       object-fit: cover;
     }
   }

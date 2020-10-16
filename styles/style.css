@@ -488,6 +488,7 @@ header .headerContainer .textContainer span {
 
 .sectionIntro .imageContainer img {
   margin-top: 25px;
+  margin-bottom: -25px;
   -o-object-fit: cover;
      object-fit: cover;
 }
