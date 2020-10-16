@@ -20,10 +20,11 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- Header section -->
     <header>
-      <!-- TODO Hamburger menu with js or something :eyes: -->
+      <!-- Nav bar -->
       <nav class="navBar closed">
-        <button class="hamburger" id="btnHamburger">
+        <button class="hamburger" id="btnHamburger" aria-label="navigation menu button">
           <i class="fas fa-bars"></i>
         </button>
         <ul class="navLinks">
@@ -41,6 +42,7 @@
           </li>
         </ul>
       </nav>
+      <!-- Header container for the text -->
       <div class="wrapper headerContainer">
         <div class="textContainer">
           <h1 data-aos="fade-left" data-aos-duration="4000">
@@ -54,18 +56,20 @@
             Front end web developer
           </h2>
         </div>
+
         <i class="fas fa-chevron-down bounce" id="arrowDown"></i>
       </div>
     </header>
 
     <main>
+      <!-- Into section, about me -->
       <section class="sectionIntro" id="sectionIntro">
-        <div class="gridWrapper gridContainer" data-aos="fade-in">
-          <h2>About Me</h2>
-          <div class="imageContainer">
+        <div class="wrapper gridContainer">
+          <h2 data-aos="fade-in">About Me</h2>
+          <div class="imageContainer" data-aos="fade-in">
             <img src="./styles/assets/meagain.jpg" alt="" />
           </div>
-          <div class="textContainer">
+          <div class="textContainer" data-aos="fade-in">
             <p>
               My name is Paige, and I'm a front end web developer based out of
               Toronto!
@@ -79,10 +83,12 @@
               music passion projects, or spending time with my dog! I'm excited
               to see what the future brings and to keep improving my knowledge.
             </p>
+            <a href="./styles/assets/CV.pdf" download>Download CV</a>
           </div>
         </div>
       </section>
 
+      <!-- projects section -->
       <section class="sectionProjects" id="projects">
         <div class="wrapper flexContainer">
           <h2>Projects</h2>
@@ -93,10 +99,9 @@
               <p>
                 Built during COVID times in an attempts to recreate the experience of walking down a movie hallway, but this time with a little more information. Take a nostalgic trip and find your next movie to watch.
               </p>
-              <!-- TODO fix link -->
               <div class="linkContainer">
-                <a href="https://pfreemanc.github.io/">View Live</a>
-                <a href="">View on GitHub</a>
+                <a href="https://pfreemanc.github.io/get-those-movies/" target="_blank">View Live</a>
+                <a href="https://github.com/pfreemanc/get-those-movies" target="_blank">View on GitHub</a>
               </div>
             </div>
             <div class="imageContainer" data-aos="fade-left">
@@ -105,43 +110,48 @@
           </div>
 
           <div class="projectContainer">
+
             <div class="textContainer" data-aos="fade-left">
               <h3>Podcast Planner</h3>
               <h4>React | Firebase | CSS3 | RESTful API</h4>
               <p>
                 Created in an agency style project, worked with a group on creating this application. Set your length of time and build your own podcast playlists with podcasts retrieved from your own selections! 
               </p>
-              <!-- TODO fix link -->
               <div class="linkContainer">
-                <a href="https://pfreemanc.github.io/">View Live</a>
-                <a href="">View on GitHub</a>
+                <a href="https://podcast-palz.github.io/podcast-planner/" target="_blank">View Live</a>
+                <a href="https://github.com/podcast-palz/podcast-planner" target="_blank">View on GitHub</a>
               </div>
             </div>
+
             <div class="imageContainer" data-aos="fade-right">
               <img src="./styles/assets/podcastMockup.png" alt="" />
             </div>
+
           </div>
 
           <div class="projectContainer">
+
             <div class="textContainer" data-aos="fade-right">
               <h3>Pokémon Generator</h3>
               <h4>jQuery | JavaScript | RESTful API | SASS | HTML5</h4>
               <p>
                 Created in a paired programming style project with Sarah Duong. Uses the Pokémon API to retrieve information based on the user input, and displays the information on a Pokédex page!
               </p>
-              <!-- TODO fix link -->
               <div class="linkContainer">
-                <a href="https://pfreemanc.github.io/">View Live</a>
-                <a href="">View GitHub</a>
+                <a href="https://sarahduongpaigefcprojectfour.github.io/sarahDuongPaigeFCProjectFour/" target="_blank">View Live</a>
+                <a href="https://github.com/sarahDuongPaigeFCProjectFour/sarahDuongPaigeFCProjectFour" target="_blank">View GitHub</a>
               </div>
             </div>
+
             <div class="imageContainer" data-aos="fade-left">
               <img src="./styles/assets/pokemonMockup.png" alt="" />
             </div>
+
           </div>
         </div>
       </section>
 
+      <!--Skills section -->
       <section class="sectionSkills" id="skills">
         <div class="wrapper">
           <h2>Skills</h2>
@@ -198,7 +208,8 @@
         </div>
       </section>
 
-      <section class="sectionContact">
+       <!-- Contact section -->
+      <section class="sectionContact" id="contact">
         <div class="wrapper gridContainer">
           <h2>Get In Touch!</h2>
           <form
@@ -223,6 +234,7 @@
               id="email"
             />
 
+            <label for="userMessage" class="sr-only">What do you want to talk about?</label>
             <textarea
               name="userMessage"
               id="userMessage"
@@ -235,36 +247,29 @@
 
           <div class="textContainer">
             <h3>OR</h3>
+            <!-- contact information -->
             <ul>
               <li>
                 <a href="mailto:pfreemanc@gmail.com">Send me an email!</a>
               </li>
               <li class="icon">
-                <a href="https://github.com/pfreemanc/"
+                <a href="https://github.com/pfreemanc/" aria-label="GitHub Link"
                   ><i class="fab fa-github-square"></i
                 ></a>
               </li>
               <li class="icon">
-                <a href="https://twitter.com/littledogfriend"
+                <a href="https://twitter.com/littledogfriend" aria-label="Twitter Link"
                   ><i class="fab fa-twitter-square"></i
                 ></a>
               </li>
               <li class="icon">
                 <a
                   href="https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/"
+                  aria-label="Linked In Link"
                   ><i class="fab fa-linkedin"></i
                 ></a>
               </li>
             </ul>
-            <!-- <button
-              class="btnCopyEmail"
-              id="btnCopyEmail"
-              title="Copy to clipboard"
-              data-clipboard-text="pfreemanc@gmail.com"
-              data-clipboard-action="copy"
-            >
-              <i class="fas fa-copy"></i>
-            </button> -->
           </div>
         </div>
       </section>
