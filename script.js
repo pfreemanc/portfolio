@@ -13,10 +13,7 @@ function displayNav() {
   }
 }
 
-new ClipboardJS(".btnCopyEmail");
-
 $(function () {
-  console.log("ready");
   AOS.init({
     duration: 1500,
   });
