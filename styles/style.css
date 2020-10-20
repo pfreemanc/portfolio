@@ -952,7 +952,7 @@ footer {
 
 @media (max-width: 425px) {
   .wrapper {
-    width: 95%;
+    width: 90%;
   }
   .navBar {
     width: 25%;
@@ -984,6 +984,20 @@ footer {
   }
   .sectionContact .gridContainer h2 {
     font-size: 3.8rem;
+  }
+  .navBar button:hover,
+  .navBar button:focus {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .sectionIntro .textContainer a:hover,
+  .sectionIntro .textContainer a:focus,
+  .sectionProjects .linkContainer a:hover,
+  .sectionProjects .linkContainer a:focus,
+  .sectionContact button:hover,
+  .sectionContact button:focus {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 
