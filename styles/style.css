@@ -491,8 +491,8 @@ header .headerContainer .textContainer span {
   margin-bottom: -25px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 20px 20px 0px 0px rgba(20, 33, 61, 0.808);
-          box-shadow: 20px 20px 0px 0px rgba(20, 33, 61, 0.808);
+  -webkit-box-shadow: 20px 20px 0px 0px #14213d;
+          box-shadow: 20px 20px 0px 0px #14213d;
 }
 
 .sectionIntro .textContainer {
