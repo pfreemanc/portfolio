@@ -1,32 +1,45 @@
 
-function displayNav() {
+
+const myApp = {};
+
+// display slide out navigation
+myApp.displayNav = function () {
   $(".navLinks").toggle("slide", {
     direction: "right",
     duration: 500,
   });
-  if(!$('.navBar').hasClass('open')) {
-    $('.navBar').removeClass('closed').addClass('open');
+  if (!$(".navBar").hasClass("open")) {
+    $(".navBar").removeClass("closed").addClass("open");
     $("#btnHamburger").html('<i class="fas fa-times"></i>');
   } else {
-    $('.navBar').removeClass('open').addClass('closed')
+    $(".navBar").removeClass("open").addClass("closed");
     $("#btnHamburger").html('<i class="fas fa-bars"></i>');
   }
-}
+};
 
-$(function () {
+myApp.init = function() {
+  // initiate the AOS library.
   AOS.init({
     duration: 1500,
   });
-  $('#btnHamburger').on('click', event => {
-    displayNav();
-  })
+  // navigation menu handler
+  $("#btnHamburger").on("click", (event) => {
+    myApp.displayNav();
+  });
 
-  $(window).scroll(function() {
+  // scroll for the arrow
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
-      $('#arrowDown').fadeOut();
-    }
-    else {
-      $('#arrowDown').fadeIn();
+      $("#arrowDown").fadeOut();
+    } else {
+      $("#arrowDown").fadeIn();
     }
   });
+}
+
+
+
+// document ready
+$(function () {
+  myApp.init();
 });
