@@ -492,8 +492,8 @@ header .headerContainer .textContainer span {
   margin-bottom: -25px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 20px 20px 1px 0px #fca311;
-          box-shadow: 20px 20px 1px 0px #fca311;
+  -webkit-box-shadow: 20px 20px 10px 5px #e69109;
+          box-shadow: 20px 20px 10px 5px #e69109;
 }
 
 .sectionIntro .textContainer {
@@ -531,7 +531,7 @@ header .headerContainer .textContainer span {
 
 .sectionIntro .textContainer a {
   font-weight: 500;
-  background: #14213d;
+  background: rgba(252, 162, 17, 0.945);
   border-radius: 10px;
   color: white;
   padding: 10px;
@@ -958,7 +958,7 @@ footer {
 
 @media (max-width: 425px) {
   .wrapper {
-    width: 90%;
+    width: 85%;
   }
   .navBar {
     width: 25%;
@@ -977,6 +977,10 @@ footer {
     font-size: 1.6rem;
     line-height: 26px;
     font-weight: 300;
+  }
+  .sectionIntro .imageContainer img {
+    -webkit-box-shadow: 10px 10px 10px 5px #e69109;
+            box-shadow: 10px 10px 10px 5px #e69109;
   }
   .sectionProjects .projectContainer .linkContainer {
     -webkit-box-orient: vertical;

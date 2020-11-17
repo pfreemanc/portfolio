@@ -198,7 +198,7 @@ header {
       margin-top: 25px;
       margin-bottom: -25px;
       object-fit: cover;
-      box-shadow: 20px 20px 1px 0px rgb(252, 163, 17);
+      box-shadow: 20px 20px 10px 5px #e69109;
     }
   }
   .textContainer {
@@ -221,7 +221,7 @@ header {
     }
     a {
       font-weight: 500;
-      background: #14213d;
+      background: rgba(252, 162, 17, 0.945);
       border-radius: 10px;
       color: white;
       padding: 10px;
@@ -537,7 +537,7 @@ footer {
 // Beginning of phones queries
 @media (max-width: 425px) {
   .wrapper {
-    width: 90%;
+    width: 85%;
   }
   .navBar {
     width: 25%;
@@ -562,6 +562,10 @@ footer {
     }
   }
 
+  .sectionIntro .imageContainer img {
+    box-shadow: 10px 10px 10px 5px #e69109;
+  }
+
   .sectionProjects .projectContainer .linkContainer {
     flex-direction: column;
     a {
@@ -569,6 +573,8 @@ footer {
       margin: 5px 0;
     }
   }
+
+
 
   .sectionContact .gridContainer h2 {
     font-size: 3.8rem;
