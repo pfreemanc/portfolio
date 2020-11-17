@@ -74,11 +74,12 @@ img {
   height: 100%;
   z-index: 100;
   button {
+    color: white;
     border: none;
     background: none;
     padding-top: 10px;
     cursor: pointer;
-    transition: transform .5s;
+    transition: transform 0.5s;
     &:hover,
     &:focus {
       transform: scale(1.2);
@@ -100,14 +101,13 @@ img {
 
 // header styles
 header {
-  min-height: 100vh; 
-  background: rgb(33, 202, 232);
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     180deg,
-    rgba(33, 202, 232, 1) 0%,
-    rgba(111, 67, 214, 1) 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(20, 33, 61, 1) 100%
   );
-
   .headerContainer {
     position: relative;
     display: flex;
@@ -146,7 +146,7 @@ header {
     }
 
     .textContainer {
-      color: #14213d;
+      color: #fca311;
       position: relative;
       text-align: center;
       h1 {
@@ -172,7 +172,7 @@ header {
 
 // Intro styles, about me section.
 .sectionIntro {
-  background: rgb(111, 67, 214);
+  background: #14213d;
   color: #fff;
 
   font-size: 2rem;
@@ -198,7 +198,7 @@ header {
       margin-top: 25px;
       margin-bottom: -25px;
       object-fit: cover;
-      box-shadow: 20px 20px 0px 0px rgba(20, 33, 61, 1);
+      box-shadow: 20px 20px 10px 5px #e69109;
     }
   }
   .textContainer {
@@ -216,17 +216,16 @@ header {
       font-weight: 300;
     }
     p:first-of-type {
-      color: white;
       font-size: 2.7rem;
       font-weight: 500;
     }
     a {
       font-weight: 500;
-      background: #14213d;
+      background: rgba(252, 162, 17, 0.945);
       border-radius: 10px;
       color: white;
       padding: 10px;
-      transition: transform .5s;
+      transition: transform 0.5s;
       &:hover,
       &:focus {
         transform: scale(1.2);
@@ -235,9 +234,10 @@ header {
   }
 }
 
-// Styles for the projects section 
+// Styles for the projects section
 .sectionProjects {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.86' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cg fill='%234fd5ed'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cg fill='%234fd5ed'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(80) translate(-987.5 -740.63)'%3E%3Cg fill='%234fd5ed'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='0.83' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cg fill='%2314213d'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cg fill='%2314213d'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(56.75) translate(-982.38 -736.78)'%3E%3Cg fill='%2314213d'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
   min-height: 60vh;
@@ -261,6 +261,8 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     .textContainer {
+    background: rgba(255, 255, 255, 0.6);
+
       color: #1c2f58;
       grid-column: 1 / span 2;
       display: flex;
@@ -302,7 +304,7 @@ header {
       text-align: center;
       background: #14213d;
       border-radius: 20px;
-      transition: transform .5s;
+      transition: transform 0.5s;
       &:hover,
       &:focus {
         transform: scale(1.15);
@@ -316,7 +318,7 @@ header {
 // Styles for the skills section
 .sectionSkills {
   padding: 100px 0;
-  background: $mainColor;
+  background: #14213d;
   color: white;
   h2 {
     text-align: center;
@@ -331,6 +333,9 @@ header {
     li {
       text-align: center;
       font-size: 8rem;
+      &:hover {
+        color: #fca311;
+      }
       p {
         font-size: 2.6rem;
       }
@@ -379,12 +384,11 @@ header {
         border-radius: 20px;
         background: rgba(0, 0, 0, 0.76);
         color: white;
-        transition: transform .5s;
+        transition: transform 0.5s;
         &:hover,
         &:focus {
           transform: scale(1.1);
         }
-
       }
     }
     .textContainer {
@@ -403,7 +407,7 @@ header {
         display: inline-block;
         padding: 10px;
         font-size: 4rem;
-        transition: transform .5s;
+        transition: transform 0.5s;
         &:hover,
         &:focus {
           transform: scale(1.3);
@@ -485,7 +489,6 @@ footer {
       font-size: 4rem;
     }
   }
-  
 
   .sectionContact .gridContainer {
     grid-template-columns: repeat(3, 1fr);
@@ -534,7 +537,7 @@ footer {
 // Beginning of phones queries
 @media (max-width: 425px) {
   .wrapper {
-    width: 90%;
+    width: 85%;
   }
   .navBar {
     width: 25%;
@@ -557,7 +560,11 @@ footer {
         font-weight: 300;
       }
     }
-  } 
+  }
+
+  .sectionIntro .imageContainer img {
+    box-shadow: 10px 10px 10px 5px #e69109;
+  }
 
   .sectionProjects .projectContainer .linkContainer {
     flex-direction: column;
@@ -566,7 +573,9 @@ footer {
       margin: 5px 0;
     }
   }
-  
+
+
+
   .sectionContact .gridContainer h2 {
     font-size: 3.8rem;
   }
@@ -589,16 +598,16 @@ footer {
 
 // Smallest phones queries
 @media (max-width: 350px) {
-  header .headerContainer .textContainer h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 5rem;
+  header .headerContainer .textContainer {
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
   }
 
   .sectionSkills .gridContainer li p {
     font-size: 1.6rem;
   }
-
-
 }
