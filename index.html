@@ -18,34 +18,34 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!-- Header section -->
-    <header>
+    <header class="header">
       <!-- Nav bar -->
-      <nav class="navBar closed">
-        <button class="hamburger" id="btnHamburger" aria-label="navigation menu button">
+      <nav class="header--nav wrapper">
+        <!-- <button class="hamburger" id="btnHamburger" aria-label="navigation menu button">
           <i class="fas fa-bars"></i>
-        </button>
-        <ul class="navLinks">
-          <li class="navLink">
+        </button> -->
+        <ul class="header--nav--links">
+          <li class="nav-link">
             <a href="#sectionIntro">About Me</a>
           </li>
-          <li class="navLink">
+          <li class="nav-link">
             <a href="#projects">Projects</a>
           </li>
-          <li class="navLink">
+          <li class="nav-link">
             <a href="#skills">Skills</a>
           </li>
-          <li class="navLink">
+          <li class="nav-link">
             <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
       <!-- Header container for the text -->
-      <div class="wrapper headerContainer">
-        <div class="textContainer">
+      <div class="text-container__wrapper">
+        <div class="text-container__content">
           <h1 data-aos="fade-left" data-aos-duration="4000">
             <span>Paige</span> Freeman-Cyopeck
           </h1>
@@ -58,7 +58,7 @@
           </h2>
         </div>
 
-        <i class="fas fa-chevron-down bounce" id="arrowDown"></i>
+        <!-- <i class="fas fa-chevron-down bounce" id="arrowDown"></i> -->
       </div>
     </header>
 
@@ -156,7 +156,9 @@
       <section class="sectionSkills" id="skills">
         <div class="wrapper">
           <h2>Skills</h2>
-          <ul class="gridContainer" data-aos="fade-in">
+          <ul class="gridContainer" 
+          data-aos="fade-in"
+          >
             <li>
               <i class="devicon-html5-plain"></i>
               <p>HTML5</p>

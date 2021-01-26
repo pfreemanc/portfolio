@@ -1,0 +1,54 @@
+@import './setup';
+@import './removeDefaults';
+@import './config';
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 95%
+}
+
+.header {
+  height: 100vh;
+  &--nav {
+    padding: 2%;
+
+    &--links {
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-family: $primaryFont;
+    }
+  }
+
+  .text-container {
+    &__wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content {
+      width: 50%;
+      font-family: $secondaryFont;
+      h1 {
+        font-size: 10rem;
+        span{
+          font-size: 13rem;
+          width: 100%;
+          display: inline-block;
+        }
+      } 
+      h2 {
+        font-size: 3.2rem;
+        margin-left: 4px;
+      }
+    }
+  }
+  
+}
+
