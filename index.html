@@ -2,330 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paige Freeman-Cyopeck</title>
-    <link rel="icon" type="image/ico" href="./styles/assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Paige's Portfolio</title>
   </head>
   <body>
-    <!-- Header section -->
-    <header>
-      <!-- Nav bar -->
-      <nav class="navBar closed">
-        <button
-          class="hamburger"
-          id="btnHamburger"
-          aria-label="navigation menu button"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul class="navLinks">
-          <li class="navLink">
-            <a href="#sectionIntro">About Me</a>
-          </li>
-          <li class="navLink">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="navLink">
-            <a href="#skills">Skills</a>
-          </li>
-          <li class="navLink">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Header container for the text -->
-      <div class="wrapper headerContainer">
-        <div class="textContainer">
-          <h1 data-aos="fade-left" data-aos-duration="4000">
-            <span>Paige</span> Freeman-Cyopeck
-          </h1>
-          <h2
-            data-aos="fade-right"
-            data-aos-duration="2000"
-            data-aos-delay="1000"
-          >
-            Front-end web developer
-          </h2>
-        </div>
-
-        <i class="fas fa-chevron-down bounce" id="arrowDown"></i>
-      </div>
-    </header>
-
     <main>
-      <!-- Into section, about me -->
-      <section class="sectionIntro" id="sectionIntro">
-        <div class="wrapper gridContainer">
-          <h2 data-aos="fade-in">About Me</h2>
-          <div class="imageContainer" data-aos="fade-in">
-            <img src="./styles/assets/meagain.jpg" alt="" />
-          </div>
-          <div class="textContainer" data-aos="fade-in">
-            <p>
-              I'm Paige, and I'm a front-end web developer based out of Toronto!
-            </p>
-            <p>
-              Taking advantage of my background in Object Oriented Programming
-              I’ve been taking the time to cultivate my skills in front-end
-              development to round out my expertise as a web developer. With a
-              passion for clean and concise code I prioritize usability and
-              accessibility in my applications. 
-              When not working and honing my
-              ever-growing list of skills in web development you can find me
-              playing games, working on music, or spending time with my dog
-              Zelda. I look forward to potentially working with you and
-              creating something wonderful together!
-            </p>
-            <a href="./styles/assets/CV.pdf" download>Download CV</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- projects section -->
-      <section class="sectionProjects" id="projects">
-        <div class="wrapper flexContainer">
-          <h2>Projects</h2>
-          <div class="projectContainer">
-            <div class="textContainer" data-aos="fade-right">
-              <h3>Theater Experience</h3>
-              <h4>React | RESTful API | CSS3</h4>
-              <p>
-                The experience of walking through a movie hallway and taking time to view all the posters brought to life in a digital format. Take a nostalgic trip through decades past of movie releases and find your next movie to watch.
-              </p>
-              <div class="linkContainer">
-                <a
-                  href="https://pfreemanc.github.io/get-those-movies/"
-                  target="_blank"
-                  >View Live</a
-                >
-                <a
-                  href="https://github.com/pfreemanc/get-those-movies"
-                  target="_blank"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-            <div class="imageContainer" data-aos="fade-left">
-              <img src="./styles/assets/movieMockup.png" alt="" />
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div class="textContainer" data-aos="fade-left">
-              <h3>Podcast Planner</h3>
-              <h4>React | Firebase | CSS3 | RESTful API</h4>
-              <p>
-                Collaborative client design driven prototype for a navigable podcatcher. Find podcasts based on topic and listening length and build your own podcast playlists catered to your interests!
-              </p>
-              <div class="linkContainer">
-                <a
-                  href="https://podcast-palz.github.io/podcast-planner/"
-                  target="_blank"
-                  >View Live</a
-                >
-                <a
-                  href="https://github.com/podcast-palz/podcast-planner"
-                  target="_blank"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-
-            <div class="imageContainer" data-aos="fade-right">
-              <img src="./styles/assets/podcastMockup.png" alt="" />
-            </div>
-          </div>
-
-          <div class="projectContainer">
-            <div class="textContainer" data-aos="fade-right">
-              <h3>Pokémon Generator</h3>
-              <h4>jQuery | JavaScript | RESTful API | SASS | HTML5</h4>
-              <p>
-                Paired programming collaborative prototype with Sarah Duong. Using the Pokémon API to provide a tool for players to find information on their favourite Pokémon and their corresponding Pokédex entry!
-              </p>
-              <div class="linkContainer">
-                <a
-                  href="https://sarahduongpaigefcprojectfour.github.io/sarahDuongPaigeFCProjectFour/"
-                  target="_blank"
-                  >View Live</a
-                >
-                <a
-                  href="https://github.com/sarahDuongPaigeFCProjectFour/sarahDuongPaigeFCProjectFour"
-                  target="_blank"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-
-            <div class="imageContainer" data-aos="fade-left">
-              <img src="./styles/assets/pokemonMockup.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--Skills section -->
-      <section class="sectionSkills" id="skills">
-        <div class="wrapper">
-          <h2>Skills</h2>
-          <ul class="gridContainer" data-aos="fade-in">
-            <li>
-              <i class="devicon-html5-plain"></i>
-              <p>HTML5</p>
+      <div class="wrapper">
+        <div class="content__container">
+          <h1 class="content__heading--main">Under Construction! But...</h1>
+          <h2 class="content__heading--subtitle">
+            My name is Paige, thank you for visiting
+          </h2>
+          <p class="content__highlight">
+            I am working with Vue and TypeScript in my current role! If you want
+            to chat about opportunities/what I've learned/what I'm good at,
+            follow one of those good good links below. Also available to talk
+            about my dog to anyone who will listen. This will be updated soon,
+            but I'm always up for a conversation.
+          </p>
+          <ul class="contact-links">
+            <li class="contact-links__link">
+              <i class="fab fa-twitter-square"></i>
             </li>
-            <li>
-              <i class="devicon-css3-plain"></i>
-              <p>CSS3</p>
+            <li class="contact-links__link">
+              <i class="fab fa-linkedin"></i>
             </li>
-            <li>
-              <i class="devicon-javascript-plain"></i>
-              <p>JavaScript</p>
-            </li>
-            <li>
-              <i class="devicon-react-original"></i>
-              <p>React</p>
-            </li>
-            <li>
-              <i class="devicon-sass-original"></i>
-              <p>Sass</p>
-            </li>
-            <li>
-              <i class="devicon-jquery-plain"></i>
-              <p>jQuery</p>
-            </li>
-            <li>
-              <i class="devicon-github-plain"></i>
-              <p>GitHub</p>
-            </li>
-            <li>
-              <i class="devicon-slack-plain"></i>
-              <p>Slack</p>
-            </li>
-            <li>
-              <i class="devicon-trello-plain"></i>
-              <p>Trello</p>
-            </li>
-            <li>
-              <i class="devicon-git-plain"></i>
-              <p>Git</p>
-            </li>
-            <li>
-              <span class="material-icons"> devices </span>
-              <p>Responsive Design</p>
-            </li>
-            <li>
-              <i class="devicon-java-plain"></i>
-              <p>Java</p>
+            <li class="contact-links__link">
+              <i class="fab fa-github-square"></i>
             </li>
           </ul>
         </div>
-      </section>
-
-      <!-- Contact section -->
-      <section class="sectionContact" id="contact">
-        <div class="wrapper gridContainer">
-          <h2>Get In Touch!</h2>
-          <form
-            action="https://formspree.io/f/xpzopkqa"
-            method="post"
-            class="formContact"
-          >
-            <label for="name" class="sr-only">Your Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              name="name"
-              id="name"
-              required="true"
-            />
-
-            <label for="email" class="sr-only">Your Email</label>
-            <input
-              type="email"
-              placeholder="Your Email"
-              name="email"
-              id="email"
-            />
-
-            <label for="userMessage" class="sr-only"
-              >What do you want to talk about?</label
-            >
-            <textarea
-              name="userMessage"
-              id="userMessage"
-              cols="40"
-              rows="5"
-              placeholder="What do you want to talk about?"
-            ></textarea>
-            <button type="submit">Send me a message!</button>
-          </form>
-
-          <div class="textContainer">
-            <h3>OR</h3>
-            <!-- contact information -->
-            <ul>
-              <li>
-                <a href="mailto:pfreemanc@gmail.com">Send me an email!</a>
-              </li>
-              <li class="icon">
-                <a href="https://github.com/pfreemanc/" aria-label="GitHub Link"
-                  ><i class="fab fa-github-square"></i
-                ></a>
-              </li>
-              <li class="icon">
-                <a
-                  href="https://twitter.com/littledogfriend"
-                  aria-label="Twitter Link"
-                  ><i class="fab fa-twitter-square"></i
-                ></a>
-              </li>
-              <li class="icon">
-                <a
-                  href="https://www.linkedin.com/in/paige-freeman-cyopeck-01a4251b5/"
-                  aria-label="Linked In Link"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <footer class="wrapper">
-        <p>Paige Freeman-Cyopeck &copy; 2020</p>
-      </footer>
+      </div>
     </main>
-
     <script
       src="https://kit.fontawesome.com/9a98468feb.js"
       crossorigin="anonymous"
     ></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
