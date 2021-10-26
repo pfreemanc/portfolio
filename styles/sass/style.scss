@@ -60,7 +60,6 @@ main {
     &--main {
       font-size: 8.4rem;
       font-weight: 700;
-      margin-top: 100px;
 
       @media (max-width: 1024px) {
         font-size: 6.8rem;
@@ -72,7 +71,7 @@ main {
 
       // Mobile large
       @media (max-width: 425px) {
-        font-size: 4.2rem;
+        font-size: 3.6rem;
       }
     }
 
@@ -86,7 +85,7 @@ main {
 
       // Mobile large
       @media (max-width: 414px) {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
       }
     }
   }
@@ -95,6 +94,10 @@ main {
 .contact-links {
   display: flex;
   margin-top: 50px;
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+  }
 
   &__link {
     margin-right: 50px;
@@ -105,30 +108,12 @@ main {
 
   i {
     font-size: 4.2rem;
-  }
-}
+    color: white;
+    transition: all 1s ease-in-out;
 
-// Mobile small
-@media (max-width: 320px) {
-}
-// Mobile
-@media (max-width: 375px) {
-}
-// Mobile large
-@media (max-width: 414px) {
-}
-// Tablet and below
-@media (max-width: 768px) {
-}
-// Tablet Large
-@media (max-width: 1024px) {
-}
-// MacBook Pro 13 inch
-@media (max-width: 1280px) {
-}
-// MacBook Pro 15 inch
-@media (max-width: 1440px) {
-}
-// MacBook Pro 16 inch
-@media (min-width: 1792px) {
+    &:hover,
+    &:focus {
+      transform: scale(1.4);
+    }
+  }
 }
